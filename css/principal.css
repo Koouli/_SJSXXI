@@ -1,0 +1,297 @@
+.cards{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 3% 2.5%;
+  
+}
+.card{
+  display: inline-block ;
+  position: relative;
+  width: 16%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cont-card{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-self: center;
+  font-family: 'Poppins' 'Arial';
+  
+}
+.card-pic{
+  position: absolute;
+  display: block;
+  width: 32%;
+  left: 35%;
+  top: 20%;
+}
+
+.info-card{
+  width: 100%;
+  height: 100%;
+  background-color: #aa2b2400;
+  position: absolute;
+  top: 65%;
+  transition: all 0.5s;
+
+}
+.title-card{
+  font-size: 1.2rem;
+  transition: margin-top 1s, color 0.3s;
+}
+.sub-card{
+  width: 100%;
+  margin: 4% 0;
+  visibility: hidden;
+}
+.sub-card p{
+  visibility: hidden;
+  margin: 0% 2%;
+  color: #fff;
+}
+.card:hover .info-card{
+  width: 100%;
+  top: 0%;
+  background-color: #aa2a24;
+  
+}
+.card:hover .info-card p{
+  visibility: visible;
+}
+.card:hover .sub-card{
+  position: absolute;
+  visibility: visible;
+  bottom: 15%;
+  
+}
+.card:hover .title-card{
+margin-top: 20%;
+color: #fff;
+font-size: 1.3rem;
+}
+.sub-card button{
+  border-radius: 20px;
+  position: relative;
+  border: none;
+  text-align: left;
+  padding: 5px 10px;
+  width: 78%;
+  height: 6ex;
+  background-color: transparent;
+  font-family: 'Poppins' 'Arial';
+  border: #fff 1.5px solid;
+}
+.sub-card button a{
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  
+}
+.sub-card div#arrow-button{
+  display: flex;
+  width: 18%;
+  margin-left: 7%;
+} 
+
+.card:after {
+  position: relative;
+  content: "";
+  display: block;
+  padding-bottom: 92%;
+}
+.title-down{
+    color: #aa2a24;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .download{
+    text-align: center;
+    margin: 60px;
+  }
+  .download button{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px;
+    background-color: #d25751;
+    border: none;
+    transition: .5s;
+  }
+  .download button:hover{
+    transform: scale(1.05);
+  }
+  .download a{
+    color:#fff;
+    font-size: large;
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+  }
+	.slider {
+		width: 100vw;
+		height: 500px;
+		position: relative;
+		background: #242424;
+		overflow: hidden;
+		margin: 5.6562em auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.slider img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: relative;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		animation: fade 1.5s;
+	}
+	.slider .seta {
+		z-index: 10;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		right: auto;
+		width: auto;
+		height: 1.5rem;
+		font-size: 2.5em;
+		color: cornsilk;
+		opacity: 0.3;
+		transition: opacity 1s;
+	}
+	.slider .seta:hover {
+		cursor: pointer;
+		opacity: 1;
+	}
+	.slider .arrow-left {
+		left: 2%;
+	}
+	.slider .arrow-right {
+		right: 2%;
+	}
+	.slider .paginacao {
+		position: absolute;
+		margin: auto;
+		top: auto;
+		bottom: 2%;
+		left: 0;
+		right: 0;
+		width: 7rem;
+		height: auto;
+		z-index: 5;
+	}
+	.slider .paginacao .botao {
+		width: auto;
+		height: auto;
+		display: inline-flex;
+		align-content: center;
+		justify-content: center;
+		color: #fff;
+    display: none;
+	}
+	@keyframes fade {
+		from {
+			opacity: 0.1;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+@media(max-width:1250px){
+	.slider {
+		height: 450px;
+	}
+}
+@media (max-width: 920px){
+    .title-princ{
+        font-size: x-large;
+        margin: 4em 0 2em 0em;
+    }
+		.slider {
+			height: 350px;
+		}
+    .download{
+        text-align: center;
+        margin: 20px;
+      }
+      .download button{
+        width: 280px;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 10px;
+        background-color: #d25751;
+        border: none;
+        transition: .5s;
+      }
+
+    
+}
+@media (max-width:700px){
+    .card {
+        width: 500px;
+        height: 550px;
+      }
+			.slider {
+				height: 250px
+			}
+}
+@media (max-width:550px){
+    .card {
+        width: 400px;
+        height: 430px;
+      }
+    .title-princ{
+        font-size: larger;
+        margin: 5em 0 1em 0em;
+    }
+		.slider {
+			height: 200px;
+	
+		}
+}
+@media (max-width:450px){
+    .card {
+        width: 340px;
+        height: 380px;
+      }
+      .download button{
+        width: 200px;
+        height: 30px;
+        border-radius: 70px;
+      }
+    .title-down{
+        font-size: large;
+    }
+		.slider {
+			
+			height: 180px;
+		}
+}
+@media (max-width:350px){
+    .card {
+        width: 250px;
+        height: 300px;
+      }
+			.slider {
+			
+				height: 140px;
+			}
+			
+}
